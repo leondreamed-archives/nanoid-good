@@ -54,5 +54,8 @@
 	"dependencies": {
 		"nanoid": "^3.2.0",
 		"naughty-words": "^1.2.0"
+	},
+	"publishConfig": {
+		"directory": "dist"
 	}
 }
