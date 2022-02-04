@@ -1,8 +1,6 @@
-import { createRequire } from 'node:module';
 import { customAlphabet } from 'nanoid';
 
-const require = createRequire(import.meta.url);
-const naughtyWords = require('naughty-words/en.json') as string[];
+import naughtyWords from 'naughty-words/en.json';
 
 export function hasNaughtyWord(id: string) {
 	const idWithNumbersReplaced = id
